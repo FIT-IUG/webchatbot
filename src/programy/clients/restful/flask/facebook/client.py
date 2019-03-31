@@ -40,8 +40,8 @@ class FacebookBotClient(FlaskRestBotClient):
         return self._facebook_bot
 
     def get_license_keys(self):
-        self._access_token = self.license_keys.get_key("FACEBOOK_ACCESS_TOKEN")
-        self._verify_token = self.license_keys.get_key("FACEBOOK_VERIFY_TOKEN")
+        self._access_token = "EAAIHIaBq1PUBALfTJMdtCVQZAo2WvzeMQkj8LK5ZBygBdTFqjkmKOPmSvj3ZCdR6Py6DoZBZCQBANugliHXGF1loCRaU1orp3yfke9oDraP17ESYpgVRJFBsPEwX3CqrLCYDzmZBkxjVfTZBBDl3DNR6Q7ErQdqA1toN5FZASZCA7FgZDZD"
+        self._verify_token = "sssss"
 
     def get_client_configuration(self):
         return FacebookConfiguration()

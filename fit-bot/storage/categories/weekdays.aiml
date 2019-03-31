@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+ <pattern> ^ <set>weekdays</set> يوم ^ الأسبوع ^</pattern>
+<template>   اه طبعًا</template>
+ </category>
+ 
+ <category>
+ <pattern> ^ يوم ^ الأسبوع  <set>weekdays</set> ^ </pattern>
+<template> اه طبعًا </template>
+ </category>
+ 
+ <category>
+ <pattern>  ^ يوم ^ الأسبوع ^ </pattern>
+ <template> لأ  </template>
+ </category>
+
+</aiml>

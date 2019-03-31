@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+ <pattern> ^ <set>xcountries</set> دولة ^</pattern>
+<template>  اه دي دولة</template>
+ </category>
+ 
+ <category>
+ <pattern> ^ دولة <set>xcountries</set>^</pattern>
+<template> اه دي دولة</template>
+ </category>
+ 
+ <category>
+ <pattern>  ^ دولة ^ </pattern>
+ <template> لأ  </template>
+ </category>
+
+</aiml>

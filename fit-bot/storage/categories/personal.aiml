@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <topic name="personal">
+   <category>
+   <pattern> لأ </pattern>
+   <template> على راحتك :( </template>
+   </category> 
+   <category>
+       <pattern>^ أوكي ^</pattern>
+       <template>
+       <condition name= "username" value= "f">
+       <random>
+       <li> عندك كم سنة ؟</li>
+       <li>  كلميني عن عيلتك</li>
+       <li> بتحبي تعملي ايه؟ عندك هوايات معينة ؟</li>    
+       <li> <think> <set name="topic"> country </set> </think> حضرتك من فين ؟ </li>
+           
+       </random>
+       </condition>
+        <condition name= "username" value= "m">
+       <random>
+       <li> عندك كم سنة ؟</li>
+       <li>  كلمني عن عيلتك</li>
+       <li> بتحب تعمل ايه؟ عندك هوايات معينة ؟</li>    
+       <li> <think> <set name="topic"> country </set> </think> حضرتك من فين ؟  </li>
+           
+       </random>
+       </condition>
+       </template>
+   </category>
+   <category>
+    <pattern> ^ماشي^ </pattern>   
+   <template>
+       <srai>^ أوكي^</srai>
+   </template>
+   </category>
+   
+     <category>
+    <pattern> ^اه^  </pattern>   
+   <template>
+       <srai> ^أوكي^</srai>
+   </template>
+   </category>
+   
+     <category>
+    <pattern>^ تمام^  </pattern>   
+   <template>
+       <srai>^ أوكي^</srai>
+   </template>
+   </category>
+   
+<category>
+       <pattern>^  ^</pattern>
+       <template>
+       <condition name= "username" value= "f">
+       <random>
+       <li>  حلو أوي، ما توأفيش كملي يا حبيبتي</li>
+       <li>  الله يا <get name= "clientname"> </get> ايه كمان ؟</li>
+       <li> كملي. حابة أسمع حاجات تانية عنك </li>    
+      <li> اسأليني أنا دلوقتي إزا حابة</li> 
+      <li> اه. طب أقولك. اسأليني عن عواصم البلدان. أنا تحفة بالجغرافيا</li>    
+       </random>
+       </condition>
+        <condition name= "username" value= "m">
+       <random>
+       <li>  حلو أوي. ايه كمان؟</li>
+       <li>  ايه، كمل يا <get name= "clientname"> </get></li>
+       <li>  جميل. اسألني أسئلة لو بتحب</li>    
+       <li>  اه أوكي. طب ايه رأيك تسألني عن عواصم البلاد؟</li>
+           
+       </random>
+       </condition>
+       </template>
+   </category>
+</topic>
+<topic name="country">
+    <category>
+ <pattern> ^ <set>xcountries</set> دولة ^</pattern>
+<template>  دي بلد جميلة أوي</template>
+ </category>
+ 
+ <category>
+ <pattern> ^ دولة <set>xcountries</set>^</pattern>
+<template>   الإجازة الجية أبقى أزورك هناك</template>
+ </category>
+ 
+ <category>
+ <pattern> ^ <set>xcountries</set>^</pattern>
+<template>  كلميني كمان عن بلدك</template>
+ </category>
+ 
+ 
+</topic>
+
+</aiml>

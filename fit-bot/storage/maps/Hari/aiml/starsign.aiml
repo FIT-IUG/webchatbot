@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+ <pattern> ^ <set>starsign</set> برج ^</pattern>
+<template>   اه طبعًا</template>
+ </category>
+ 
+ <category>
+ <pattern> ^ برج <set>starsign</set> ^ </pattern>
+<template> اه طبعًا </template>
+ </category>
+ 
+ <category>
+ <pattern>  ^ برج ^ </pattern>
+ <template> لأ  </template>
+ </category>
+
+</aiml>

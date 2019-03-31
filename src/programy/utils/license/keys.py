@@ -17,7 +17,8 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 from programy.utils.logging.ylogger import YLogger
 from programy.storage.stores.file.store.licensekeys import FileLicenseStore
 
-
+FACEBOOK_ACCESS_TOKEN = XXXX
+FACEBOOK_VERIFY_TOKEN = YYYY
 class LicenseKeys(object):
 
     def __init__(self):

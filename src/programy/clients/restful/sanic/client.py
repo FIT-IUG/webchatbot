@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Copyright (c) 2016-2019 Keith Sterling http://www.keithsterling.com
 
@@ -105,7 +106,7 @@ if __name__ == '__main__':
     print("Initiating Sanic REST Service...")
     APP = Sanic()
 
-    @APP.route('/api/rest/v1.0/ask', methods=['GET'])
+    @APP.route('/api/rest/v1.0/askk', methods=['GET'])
     async def ask(request):
         response, status = REST_CLIENT.process_request(request)
         return REST_CLIENT.create_response(response, status=status)

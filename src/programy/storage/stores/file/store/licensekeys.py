@@ -19,7 +19,8 @@ from programy.utils.logging.ylogger import YLogger
 from programy.storage.stores.file.store.filestore import FileStore
 from programy.storage.entities.license import LicenseStore
 
-
+FACEBOOK_ACCESS_TOKEN = XXXX
+FACEBOOK_VERIFY_TOKEN = YYYY
 class FileLicenseStore(FileStore, LicenseStore):
 
     def __init__(self, storage_engine):

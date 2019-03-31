@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+ <pattern> ^ <set>badlanguage</set>  ^</pattern>
+<template>  
+<condition name= "username"> 
+<li value= "f">  بلاش كده لو سمحتي. أمال فتفت ما عندوش مزح خالص بالكلام ده </li>   
+<li value= "m"> ليه كده يا <get name= "clientname"></get> احترم نفسك لو سمحت. فتفت ما بحبش الكلام ده خالص</li>
+    
+</condition>
+    
+</template>
+ </category>
+
+</aiml>
