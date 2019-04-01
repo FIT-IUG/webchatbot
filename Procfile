@@ -1,2 +1,2 @@
-web: python3 fit-bot/scripts/xnix/y-bot-facebook.sh
+web: bash fit-bot/scripts/xnix/y-bot-facebook.sh
 
