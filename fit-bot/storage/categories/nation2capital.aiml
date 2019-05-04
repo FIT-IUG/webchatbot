@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ 
+
+ <category>
+  <pattern>  <set>xcountries</set> ^  </pattern>
+      <template> عاصمة <star index= "2"/>  <map name="nation2capital"><star/></map>
+      </template>
+  </category>
+  
+  <category>
+  <pattern> ^  <set>xcountries</set>^ </pattern>
+      <template>عاصمة  <star index= "2"/>  <map name="nation2capital"> <star index="2"/></map>
+      </template>
+  </category>
+ 
+
+</aiml>

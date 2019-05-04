@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+ <category>
+  <pattern>  اسمي <set>names</set>^ </pattern>
+  <template>
+   <condition name= "gotname" value= "true"> أنا فاكرة إني كنت بكلم  <get name= "clientname"></get>
+  معايا حد جديد يعني ؟
+  </condition>
+    <think> <set name="username"> <map name="name2gender"><star/></map></set></think>
+    <think> <set name= "clientname"> <star/> </set></think>
+   
+    <condition name="username" value="f">
+    <random>
+     <li>   تشرفنا يا حبيبتي </li>   
+     <li> أهلاً يا مدام <get name= "clientname"></get></li>
+     <li> عاشت الأسامي يا <get name= "clientname"></get></li> 
+     </random> 
+      </condition>
+   
+  <condition name="username" value="m">
+  <random>
+   <li >  أهلاً يا سي <get name ="clientname"></get> </li>
+   <li > تشرفنا يا سي <get name= "clientname"></get> </li>
+   <li> عاشت الأسامي يا سي <get name= "clientname"> </get></li>   
+    </random>  
+       </condition>
+
+      <think> <set name= "gotname"> true </set> </think>
+      </template>
+  </category>
+  
+  <category>
+  <pattern>  <set>names</set>^ </pattern>
+  <template>
+   <condition name= "gotname" value= "true"> أنا فاكرة إني كنت بكلم  <get name= "clientname"></get>
+  معايا حد جديد يعني ؟
+  </condition>
+    <think> <set name="username"> <map name="name2gender"><star/></map></set></think>
+    <think> <set name= "clientname"> <star/> </set></think>
+   
+    <condition name="username" value="f">
+    <random>
+     <li> تشرفنا يا حبيبتي </li>   
+     <li> أهلاً يا مدام <get name= "clientname"></get></li>
+     <li> عاشت الأسامي يا <get name= "clientname"></get></li> 
+     </random> 
+      </condition>
+   
+  <condition name="username" value="m">
+  <random>
+   <li >  أهلاً يا سي <get name ="clientname"></get> </li>
+   <li > تشرفنا يا سي <get name= "clientname"></get> </li>
+   <li> عاشت الأسامي يا سي <get name= "clientname"> </get></li>   
+    </random>  
+       </condition>
+      
+      <think> <set name= "gotname"> true </set> </think>
+      </template>
+  </category>
+  
+  
+  <category>
+      <pattern>^ ايه اسمي ^</pattern>
+      <template> <get name= "clientname"/> </template> 
+  </category>
+  
+   <category>
+      <pattern> ^ اسمي ايه  ^</pattern>
+      <template> <get name= "clientname"/> </template> 
+  </category>
+  
+  
+<category>
+  <pattern>  أنا  <set>names</set>^ </pattern>
+  <template>
+   <condition name= "gotname" value= "true"> أنا فاكرة إني كنت بكلم  <get name= "clientname"></get>
+  معايا حد جديد يعني ؟
+  </condition>
+    <think> <set name="username"> <map name="name2gender"><star/></map></set></think>
+    <think> <set name= "clientname"> <star/> </set></think>
+   
+    <condition name="username" value="f">
+    <random>
+     <li> تشرفنا يا حبيبتي </li>   
+     <li> أهلاً يا مدام <get name= "clientname"></get></li>
+     <li> عاشت الأسامي يا <get name= "clientname"></get></li> 
+     </random> 
+      </condition>
+   
+  <condition name="username" value="m">
+  <random>
+   <li >  أهلاً يا سي <get name ="clientname"></get> </li>
+   <li > تشرفنا يا سي <get name= "clientname"></get> </li>
+   <li> عاشت الأسامي يا سي <get name= "clientname"> </get></li>   
+    </random>  
+       </condition>
+      
+      <think> <set name= "gotname"> true </set> </think>
+      </template>
+  </category>
+<category>
+ <pattern> ^ اسمي ^ </pattern>
+ <template>
+  <think> <set name= "clientname"> <star index= "2"/> </set></think>
+  <random>
+   <li >  أهلاً يا  <get name ="clientname"></get> حضرتك راجل ولا ست ؟ </li>
+   <li > تشرفنا يا  <get name= "clientname"></get> عفوًا، حضرتك راجل و لا ست؟ </li>
+   <li> عاشت الأسامي يا  <get name= "clientname"> </get> الاسم ده جديد علي. حضرتك راجل ولا ست؟</li>   
+    </random> 
+    <think><set name="topic"> gender </set></think>
+   </template>    
+</category>
+
+<category>
+ <pattern> ^ أنا ^ </pattern>
+ <template>
+  <think> <set name= "clientname"> <star index= "2"/> </set></think>
+  <random>
+   <li >  أهلاً يا  <get name ="clientname"></get> حضرتك راجل ولا ست ؟ </li>
+   <li > تشرفنا يا  <get name= "clientname"></get> عفوًا، حضرتك راجل و لا ست؟ </li>
+   <li> عاشت الأسامي يا  <get name= "clientname"> </get> الاسم ده جديد علي. حضرتك راجل ولا ست؟</li>   
+    </random> 
+    <think><set name="topic"> gender </set></think>
+   </template>    
+</category>
+
+
+
+<topic name="gender">
+   <category>
+   <pattern>^ راجل ^ </pattern>
+   <template>   <think> <set name= "username"> m</set></think>
+   تشرفنا يا سي <get name= "clientname"></get> </template>
+ 
+       
+   </category> 
+   
+   <category>
+       <pattern> ^ ست ^</pattern>
+       <template>
+       <think> <set name= "username"> f</set></think>
+         تشرفنا يا حبيبتي</template>
+    
+       
+   </category>
+</topic>
+     
+
+
+</aiml>

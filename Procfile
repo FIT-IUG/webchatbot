@@ -1,0 +1,1 @@
+worker:sh y-bot-facebook.sh
