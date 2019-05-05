@@ -1,6 +1,6 @@
 facebook:
   description: Program-Y Facebook Client
-  host: 127.0.0.1
+  host: 0.0.0.0
   port: 33507
   debug: false
   api: /api/facebook/v1.0/ask
